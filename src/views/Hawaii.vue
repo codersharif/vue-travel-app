@@ -1,5 +1,5 @@
 <template>
     <div>
-        <h2>Hawaii</h2>
+        <h2>Hawaii Country</h2>
     </div>
 </template>
