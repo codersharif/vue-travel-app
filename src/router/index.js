@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -18,6 +19,27 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue")
+  },
+  {
+    path:"/brazil",
+    name:"brazil",
+    component: () =>
+     import(/* webpackChunkName: "brazil" */"../views/Brazil")
+  },
+  {
+    path:"/hawaii",
+    name:"hawaii",
+    component: () => import(/* webpackChunkName: "hawaii" */"../views/Hawaii")
+  },
+  {
+    path:"/panama",
+    name:"panama",
+    component: () => import(/* webpackChunkName: "panama" */"../views/Panama")
+  },
+  {
+    path:"/jamaica",
+    name:"jamaica",
+    component: () => import(/* webpackChunkName: "jamaica" */"../views/Jamaica")
   }
 ];
 
