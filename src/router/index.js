@@ -5,6 +5,9 @@ import Home from "../views/Home.vue";
 
 Vue.use(VueRouter);
 
+const linkExactActiveClass="vue-link-active-class";
+const mode="history"; // remove hash (#)
+
 const routes = [
   {
     path: "/",
@@ -21,30 +24,17 @@ const routes = [
       import(/* webpackChunkName: "about" */ "../views/About.vue")
   },
   {
-    path:"/brazil",
-    name:"brazil",
+    path:"/details/:slug",
+    name:"DestinationDetails",
     component: () =>
-     import(/* webpackChunkName: "brazil" */"../views/Brazil")
-  },
-  {
-    path:"/hawaii",
-    name:"hawaii",
-    component: () => import(/* webpackChunkName: "hawaii" */"../views/Hawaii")
-  },
-  {
-    path:"/panama",
-    name:"panama",
-    component: () => import(/* webpackChunkName: "panama" */"../views/Panama")
-  },
-  {
-    path:"/jamaica",
-    name:"jamaica",
-    component: () => import(/* webpackChunkName: "jamaica" */"../views/Jamaica")
+    import(/* webpackChunkName: "DestinationDetails" */"../views/DestinationDetails")
   }
 ];
 
 const router = new VueRouter({
-  routes
+  routes,
+  linkExactActiveClass,
+  mode
 });
 
-export default router;
+export default router
