@@ -77,6 +77,14 @@ const routes = [
     meta: {requiresAuth:true}
   },
   {
+   path:"/invoices",
+   name:"invoices",
+   component: () => import(
+      /* webpackChunkName: "invoices" */ 
+      "../views/Invoices"),
+      meta: {requiresAuth:true}
+  },
+  {
     path:"/login",
     name:"login",
     component: () => import(
@@ -106,7 +114,8 @@ router.beforeEach((to,from,next) => {
   if(to.matched.some(record => record.meta.requiresAuth)){
     if(!store.user){
      next({
-       name:"login"
+       name:"login",
+       query:{redirect: to.fullPath}
      });
     }else{
      next();
