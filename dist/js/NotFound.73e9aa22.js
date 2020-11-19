@@ -1,2 +1,2 @@
 (window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["NotFound"],{9703:function(n,t,e){"use strict";e.r(t);var o=function(){var n=this,t=n.$createElement,e=n._self._c||t;return e("div",[e("h2",[n._v("Not Found")]),e("p",[n._v(" Opps we couldn't find that page. Try going "),e("router-link",{attrs:{to:{name:"home"}}},[n._v("Home")])],1)])},u=[],r=e("2877"),a={},l=Object(r["a"])(a,o,u,!1,null,null,null);t["default"]=l.exports}}]);
-//# sourceMappingURL=NotFound.8c81d783.js.map
+//# sourceMappingURL=NotFound.73e9aa22.js.map
