@@ -20,8 +20,8 @@ export default{
 }
 button{
     /* color: white;
-    background: gray;
-    padding: 10px; */
+    background: gray;*/
+    padding: 10px; 
     border: 0;
 }
 </style>
