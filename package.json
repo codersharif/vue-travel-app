@@ -6,7 +6,9 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
+    "deploy": "gh-pages -d dist"
   },
+  "homepage": "https://github.com/codersharif/vue-travel-app",
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
